@@ -1,0 +1,29 @@
+CompileFlags:
+  Add:
+    - "-std=c23"
+  FallbackFlags:
+    - "-Wall"
+    - "-Wextra"
+    - "-Wno-unused-parameter"
+    - "-Wpedantic"
+
+ClangTidy:
+  Add: []
+  CheckOptions: []
+
+Format:
+  Style: file
+
+Index:
+  Background: true
+  TrackDependents: true
+
+Completion:
+  AllScopes: true
+
+HeaderInsertion:
+  IncludeBlocks: "Preserve"
+  PreferAngleBrackets: false
+
+Diagnostics:
+  Suppress: []

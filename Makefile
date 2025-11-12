@@ -1,4 +1,5 @@
 main:
-	@rm -rf build/
-	@mkdir -p build
-	@g++ src/main.cpp -o build/myedit -Wall -Wextra -Wpedantic -std=c++23
+	@gcc -c src/main.c -o myedit.o -Wall -Wextra -Wpedantic -std=c23
+	@gcc -c src/mode.c -o mode.o -Wall -Wextra -Wpedantic -std=c23
+
+	@gcc myedit.o mode.o -o myedit
